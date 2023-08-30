@@ -1,4 +1,4 @@
-#here's a link to the form page [beautiful form](https://beautifulforms.netlify.app")
+#here's a link to the form page (https://beautifulforms.netlify.app")
 
 # CSS Layout Project
 

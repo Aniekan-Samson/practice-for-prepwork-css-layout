@@ -35,9 +35,28 @@ form {
     position: relative;
     left: 9px;
 }
+/* form group dategroup */
 .input-class {
     display: flex;
     flex-direction: column;
+}
+.status-grp label {
+    left: 61px;
+    position: absolute;
+    top: -15px;                /* right: 120px; */
+}
+.status-grp input[type=email] {
+    position: relative;
+    left: 9px;
+}
+.date-grp label {
+    position: absolute;
+    top: -15px;
+    right: 66px;
+}
+.date-grp input[type=email] {
+    position: relative;
+    right:10px
 }
 .small-input {
 /* height: 50%; */
@@ -112,4 +131,43 @@ width: 247px;
         font-size: 57px;
         font-family: system-ui;
         color: white;
+}
+/* comts-cls */
+.comts-cls {
+    display: flex;
+    flex-direction: column;
+}
+.comts-cls label {
+    margin-left: -125px;
+}
+.comts-cls textarea {
+    margin: auto;
+    padding-left: 93px;
+    padding-bottom: 41px;
+}
+.lang {
+    margin-top: 4px;
+    font-size: 18.5px;
+     margin-left: -9px;
+}
+/* register  */
+div .register {
+    display: inline-flex;
+    margin-top: 10px;
+}
+
+.register input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    margin-left: 16px;
+}
+/* submit */
+div button {
+    background-color: #4070F4;
+    color:white;
+    font-size: 17px;
+    padding: 10px 105px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 19px
 }

@@ -4,66 +4,97 @@
         <link rel="stylesheet" type="text/css" href="layout.css">
     </head>
     <body>
+        <div class="header">
+
+
+        <div>
+            <h1>Welcome to <br> a world  <br/> of Possibilities </h1>
+        </div>
         <form action="/form-handling-url" method="post">
-            <fieldset>
-            <legend>Add user</legend>
 
-            <div>
-                <label for="firstName">First name</label>
-                <input type="text" id="firstName" name="first_name">
+            <fieldset class="form-fieldset" >
+
+
+            <legend class="user">Add user</legend>
+
+
+
+            <div class="input-class">
+                <label for="firstName">First name:</label>
+                <input type="text" id="firstName" name="first_name" class="small-input">
             </div>
 
-            <div>
-                <label for="lastName">Last name</label>
-                <input type="text" id="lastName" name="last_name">
+            <div class="input-class">
+                <label for="lastName">Last name:</label>
+                <input type="text" id="lastName" name="last_name" class="small-input">
             </div>
 
-            <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email_address">
+            <div class="input-class">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email_address" class="small-input">
             </div>
 
-            <div>
-                <label for="role">Status</label>
-                <select id="role" name="user_role_name">
-                <option value="student">Student</option>
-                <option value="instructor">Instructor</option>
-                <option value="guest">Guest</option>
-                </select>
+            <div class="form-row">
+            <div class="form-group status-grp">
+                <label for="role">Status:</label>
+                <input type="email" id="email" name="email_address" class="small-input email-class" style="
+                position: relative;
+                left: 9px;
+            ">
+            </div>
+            <div class="form-group date-grp">
+                <label for="role " style="
+                position: absolute;
+                top: -15px;
+                /* left: 150px; */
+                right: 66px;
+            ">Date:</label>
+                <input type="email" id="email" name="email_address" class="small-input date-class" style="position: relative; right:10px ;" >
+            </div>
+            </div>
+                <p style="margin-top: 4px; font-size: 18.5px; margin-left: -9px;">choose your favourite language:</p>
+
+            <div class = "option" style="position: relative; right: 46px;">
+                 <input type="radio" class="radio-cls" id="html" name="fav_language" value="HTML" style="margin-left: -8px;">
+                <label for="html" style="margin-left: 3px;">HTML</label><br>
+                <input type="radio" class="radio-cls" id="css" name="fav_language" value="CSS" style="margin-left: 15px;">
+                <label for="css" style="margin-left: 10px;">CSS</label><br>
+                <input type="radio" class="radio-cls" id="javascript" name="fav_language" value="JavaScript" style="margin-left: 21px; padding: -8px;">
+                <label for="javascript" class="radio-cls" style="margin-left: 8px;">JS</label>
             </div>
 
-            <div>
-                <p>Choose your favorite Web language:</p>
-                <input type="radio" id="html" name="fav_language" value="HTML">
-                <label for="html">HTML</label><br>
-                <input type="radio" id="css" name="fav_language" value="CSS">
-                <label for="css">CSS</label><br>
-                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                <label for="javascript">JavaScript</label>
+            <div style="display: flex; flex-direction: column;">
+                <label for="comments" style="margin-left: -125px;">Comments:</label>
+                <textarea id="comments" name="comments" style="
+                margin: auto;
+                padding-left: 93px;
+                padding-bottom: 41px;"></textarea>
             </div>
-
-            <div>
-                <label for="comments">Comments</label>
-                <textarea id="comments" name="comments"></textarea>
-            </div>
-
+<!--
             <div>
                 <label for="date">Date</label>
                 <input type="date" id="date" name="date">
+            </div> -->
+
+            <div style="display: inline-flex; margin-top: 10px; ">
+                <input type="checkbox" id="signup" name="signup" value="Signup" style="width: 20px; height: 20px;">
+                <label for="signup">Sign up <br> for news</label><br>
+                <input type="checkbox" id="terms" name="terms" value="Terms" style="width: 20px; height: 20px; margin-left: 16px;">
+                <label for="terms" style="margin-left: 4px;"> Agree to <br> terms </label>
             </div>
 
             <div>
-                <input type="checkbox" id="signup" name="signup" value="Signup">
-                <label for="signup">Sign up for news letter</label><br>
-                <input type="checkbox" id="terms" name="terms" value="Terms">
-                <label for="terms"> Agree to terms and conditions</label>
-            </div>
-
-            <div>
-                <button type="submit">Submit</button>
+                <button type="submit" style="background-color: #4070F4;
+                color:white;
+                font-size: 17px;
+                padding: 10px 105px;
+                border: none;
+                border-radius: 5px;
+                margin-top: 19px">Submit</button>
             </div>
 
             </fieldset>
         </form>
+    </div>
     </body>
 </html>
